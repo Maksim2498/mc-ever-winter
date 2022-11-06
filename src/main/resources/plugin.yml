@@ -1,0 +1,19 @@
+name: EverWinter 
+version: "${project.version}"
+description: Makes it snow everywhere
+author: maksim2498
+
+main: space.moontalk.mc.ever_winter.EverWinter
+api-version: 1.18
+
+commands:
+  everWinter:
+    aliases: [ew]
+    description: Either enables either disables either shows status of ever-winter mode
+    usage: /<command> [enable | disable]
+    permission: everWinter.everWinter
+
+permissions:
+  everWinter.everWinter:
+    description: Allows usage of /everWinter
+    default: op
