@@ -4,7 +4,7 @@
 
     <groupId>space.moontalk.mc</groupId>
     <artifactId>ever-winter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>Ever Winter</name>
     <description>Minecraft plugin that makes it snow everywhere</description>

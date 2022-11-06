@@ -113,9 +113,9 @@ public class ChunkController implements Listener {
         val world        = chunk.getWorld(); 
         val blockRecords = new LinkedList<BlockRecord>(); 
 
-        for (int x = 0; x < 16; ++x)
-            for (int z = 0; z < 16; ++z)
-                for (int y = world.getMinHeight(); y < world.getMaxHeight(); ++y) {
+        for (int x = 0; x < 16; x += 4)
+            for (int z = 0; z < 16; z += 4)
+                for (int y = world.getMinHeight(); y < world.getMaxHeight(); y += 4) {
                     val block    = chunk.getBlock(x, y, z);
                     val biome    = block.getBiome();
                     val newBiome = evalNewBiome(biome);
