@@ -83,29 +83,25 @@ public class ChunkController implements Listener {
         for (val world : server.getWorlds()) {
             val env = world.getEnvironment();
 
-            if (env == Environment.NETHER
-             || env == Environment.CUSTOM)
+            if (env == Environment.NETHER || env == Environment.CUSTOM)
                 continue;
 
             val chunks = world.getLoadedChunks();
-            val i      = new int[1];
-
-            i[0] = 0;
-
-            val task = new Runnable[1];
-
-            task[0] = () -> {
-                if (i[0] == chunks.length - 1)
-                    return;
-
-                addChunk(chunks[i[0]]);
-
-                i[0]++;
-
-                scheduler.scheduleSyncDelayedTask(plugin, task[0], 1);
+            val status = new Object() { 
+                int      i = 0;
+                Runnable task;
             };
 
-            scheduler.scheduleSyncDelayedTask(plugin, task[0]);
+            status.task = () -> {
+                if (status.i == chunks.length)
+                    return;
+
+                addChunk(chunks[status.i]);
+                status.i++;
+                scheduler.scheduleSyncDelayedTask(plugin, status.task, 1);
+            };
+
+            scheduler.scheduleSyncDelayedTask(plugin, status.task);
         }
     }
 

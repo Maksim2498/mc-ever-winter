@@ -12,8 +12,15 @@ public class EverWinter extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        chunkController = new ChunkController(this);
+        saveDefaultConfig();
+        setupChunkController();
         setupCommand(); 
+    }
+
+    private void setupChunkController() {
+        chunkController = new ChunkController(this);
+        val config = getConfig();
+        chunkController.setEnabled(config.getBoolean("enabled"));
     }
 
     private void setupCommand() {
@@ -24,6 +31,17 @@ public class EverWinter extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        updateConfig();
+        deinitChunkController();
+    }
+
+    private void updateConfig() {
+        val config = getConfig();
+        config.set("enabled", chunkController.isEnabled());
+        saveConfig();
+    }
+
+    private void deinitChunkController() {
         chunkController.setEnabled(false);
         chunkController = null;
     }
