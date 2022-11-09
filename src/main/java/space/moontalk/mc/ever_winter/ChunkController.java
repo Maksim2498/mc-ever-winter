@@ -142,6 +142,7 @@ public class ChunkController implements Listener {
             case JAGGED_PEAKS             -> Biome.FROZEN_PEAKS;
             case JUNGLE                   -> Biome.SNOWY_TAIGA;
             case MANGROVE_SWAMP           -> Biome.SNOWY_TAIGA;
+            case COLD_OCEAN               -> Biome.FROZEN_OCEAN;
             case MEADOW                   -> Biome.SNOWY_PLAINS;
             case OCEAN                    -> Biome.FROZEN_OCEAN;
             case OLD_GROWTH_BIRCH_FOREST  -> Biome.SNOWY_TAIGA;
