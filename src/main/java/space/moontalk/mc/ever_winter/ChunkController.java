@@ -133,6 +133,9 @@ public class ChunkController implements Listener {
             case BIRCH_FOREST             -> Biome.SNOWY_TAIGA;
             case DARK_FOREST              -> Biome.SNOWY_TAIGA;
             case DESERT                   -> Biome.SNOWY_PLAINS;
+            case DEEP_COLD_OCEAN          -> Biome.DEEP_FROZEN_OCEAN;
+            case DEEP_LUKEWARM_OCEAN      -> Biome.DEEP_FROZEN_OCEAN;
+            case DEEP_OCEAN               -> Biome.DEEP_FROZEN_OCEAN;
             case ERODED_BADLANDS          -> Biome.SNOWY_PLAINS;
             case FLOWER_FOREST            -> Biome.SNOWY_TAIGA;
             case FOREST                   -> Biome.SNOWY_TAIGA;
