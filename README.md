@@ -57,6 +57,8 @@ Biomes are changed as listed below:
 | WOODED_BADLANDS          | SNOWY_PLAINS      |
 | RIVER                    | FROZEN_RIVER      |
 
+Bimes not presented in the table aren't changed.
+
 ## Commands
 
 The plugin provides only one command `/everWinter` (or it's alias `/ew`).
