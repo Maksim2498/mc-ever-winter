@@ -18,7 +18,6 @@ recovered. This mode can be enabled via command.
 
 Biomes are changed as listed below:
 
-+--------------------------+-------------------+
 | Before                   | After             |
 +--------------------------+-------------------+
 | BAMBOO_JUNGLE            | SNOWY_TAIGA       |
@@ -57,7 +56,6 @@ Biomes are changed as listed below:
 | WINDSWEPT_SAVANNA        | SNOWY_PLAINS      |
 | WOODED_BADLANDS          | SNOWY_PLAINS      |
 | RIVER                    | FROZEN_RIVER      |
-+--------------------------+-------------------+
 
 ## Commands
 
