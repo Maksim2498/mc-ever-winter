@@ -2,15 +2,18 @@
 
 ![Logo](/images/logo.png)
 
-## Index
+## Table of Contents
 
-- [About](#about);
+- [Table of Contents](#table-of-contents);
 - [Commands](#commands);
 - [Config](#config);
 - [Download](#download);
 - [Installation](#installation).
 
 ## About
+
+__Warning: this is kinda buggy now. It can break your world's biome data so
+don't use it on production servers yet.__
 
 This plugins temporarily changes world biomes to corresponding winter-biomes
 when _ever-winter_ mode is enabled. When this mode is turned off biomes are
