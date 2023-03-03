@@ -12,7 +12,7 @@
 
 ## About
 
-__Warning: this is kinda buggy now. It can break your world's biome data so
+__Warning: this is kinda buggy now. It can corrupt your world's biome data so
 don't use it on production servers yet.__
 
 This plugins temporarily changes world biomes to corresponding winter-biomes
